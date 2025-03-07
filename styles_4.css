@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(120deg, #0077ab, #0081b9, #B3B9BC);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-left, .card-right {
+    width: 35vw;
+    height: 35vw;
+}
+
+.card-left {
+    background-color: #00415d;
+    background-image: url(homes.svg);
+    background-position: center 20%;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+#h1-left {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color:  #d8e7ff;
+    margin-bottom: 11vw;
+}
+
+.card-right {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+#h1-right {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #004461;
+    margin: 3vw 1.5vw;
+}
+
+#email, #password {
+    height: 3.5vw;
+    width: 25vw;
+    margin-bottom: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+a {
+    background-color: #004C6D;
+    margin-bottom: 3vw;
+    text-align: center;
+    height: 4vw;
+    width: 25vw;
+    text-align: center;
+    padding: 0.5vw;
+    color: #d8e7ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3vw;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button_1:hover {
+    background-color: #005b82;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    margin-right: 0.5vw;
+    width: auto;
+    
+}
+
+#footer a {
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #004C6D;
+    margin: 0;
+    margin-left: 0.5vw;
+    width: auto;
+    padding: 0;
+}
+
+#button_2:hover {
+    color: #0081b9;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .card-left, .card-right {
+        width: 45vw;
+        height: 45vw;
+        position: relative;
+    }
+
+    .card-left {
+        background-position: center 40%;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+
+    #h1-left {
+        margin-bottom: 13vw;
+    }
+
+    .card-right {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 0;
+        
+    }
+
+    #h1-right {
+        margin-top: 6vw;
+    }
+
+    #email, #password {
+        margin-bottom: 4vw;
+    }
+
+    #button_1 {
+        margin-bottom: 5vw;
+    }
+
+    #footer p, #footer a {
+        font-size: 2vw;
+    }
+
+}
